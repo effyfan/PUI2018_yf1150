@@ -2,7 +2,10 @@ import sys
 import urllib.request, json 
 import csv
 
-#print(sys.argv)
+# check if the number of arguments is correct
+if len(sys.argv) != 4:
+    print("Invalid inputs. Please run as python3 HW3_3.py <MTA_API_KEY> <BUS_LINE> <BUS_LINE>.csv")
+    sys.exit()
 
 input_key = sys.argv[1]
 input_line = sys.argv[2]
@@ -10,10 +13,9 @@ input_filename = sys.argv[3]
 
 URL = "http://bustime.mta.info/api/siri/vehicle-monitoring.json?key={}&VehicleMonitoringDetailLevel=calls&LineRef={}".format(input_key, input_line)
 
-
+# read data from MTA
 with urllib.request.urlopen(URL) as url:
     data = json.loads(url.read().decode())
-    #print(data)
     bus_list = data["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]
     number_of_bus = len(bus_list)
     record = []
@@ -28,12 +30,12 @@ with urllib.request.urlopen(URL) as url:
         item["long"] = i["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"]
         record.append(item)
 
+# write data to filename.csv
 with open(input_filename, 'w') as csvfile:
     fieldnames = ['Latitude','Longitude','Stop Name','Stop Status']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
-    # for item in range(number_of_bus):
-        # spamwriter.writerow([location[i][0], location[i][1], stopname, stop_status])
     for i in record:
-        writer.writerow({'Latitude': i["lat"], 'Longitude': i["long"], 'Stop Name': i["stop_name"], 'Stop Status': i["stop_status"]})
+        writer.writerow({'Latitude': i["lat"], 'Longitude': i["long"], 'Stop Name': i["stop_name"], 'Stop Status': i["stop_status"]})     
+
