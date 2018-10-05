@@ -15,9 +15,13 @@ Logistic Regression | 1, waist-to-height ratio | Continuous | 1, morbidity of hy
   |||||||||
   
 
-  
+ 
   
 ![main plot](journal.pone.0010257.g002.png)
 Figure 2
 FCA results based on horses' and riders' postures at work.
 Riders' hands: high HHa, middle MHa, low LHa; Riders' heels: high HHe, middle MHe, low LHe; Reins length: short SR, medium MR, long LR, Horses' neck: high HN, horizontal HN, low LN, hollow HoN, flat FN, round RN.
+
+![main plot](WHtR.png)
+Figure 3
+ROC curves of the anthropometric indices for hypertension, diabetes, and dyslipidemia in men and women 
