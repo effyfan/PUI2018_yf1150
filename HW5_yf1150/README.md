@@ -10,8 +10,10 @@ The three tests we choose: t-Test, Correlation and Logistic Regression.
 
 | **Statistical Analyses**	|  **IV(s)**  |  **IV type(s)** |  **DV(s)**  |  **DV type(s)**  |  **Control Var** | **Control Var type**  | **Question to be answered** | **_H0_** | **alpha** | **link to paper**| 
 |:----------:|:----------|:------------|:-------------|:-------------|:------------|:------------- |:------------------|:----:|:-------:|:-------|
-Correlation	| 1, Riders' hand position 2, Riders' rein length 3,Riders' heel height | 1, categorical 2, categorical 3, categorical | 1, Horses' neck position| categorical | 1, 19 horses from two riding centres | continuous | 	Is riders' postures correlates with horses' neck position | IV has no correlation with DV | 0.05 | [Human Direct Actions May Alter Animal Welfare, a Study on Horses (Equus caballus)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010257) |
+Correlation	| 1, Riders' hand position | 1, categorical 2, categorical 3, categorical | 1, Horses' neck position| categorical | 1, Riders' rein length 2, Riders' heel height  | continuous | 	Is riders' postures correlates with horses' neck position | IV has no correlation with DV | 0.05 | [Human Direct Actions May Alter Animal Welfare, a Study on Horses (Equus caballus)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010257) |
   |||||||||
+  
+Logistic Regression | 
   
   
 ![main plot](journal.pone.0010257.g002.png)
