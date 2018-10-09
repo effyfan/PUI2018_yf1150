@@ -1,5 +1,5 @@
 # Assignment 2
-Group Work with Junjie Cai (yf1150)<br><br>
+Group Work with Junjie Cai (jc9033)<br><br>
 Contirbution:
 * T-Test: Junjie Cai
 * Correlation: Effy Fan
