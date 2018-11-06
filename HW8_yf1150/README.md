@@ -4,5 +4,5 @@ Assignment 1
 The homework is in this file: 
 
 Assignment 2
-The homework is in this link to the file on Authorea: 
-
+The article is on Authorea throught this link: 
+https://www.authorea.com/335667/OPpM6zZxGotR7qCkE68vpQ
