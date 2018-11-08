@@ -7,6 +7,7 @@ https://github.com/effyfan/PUI2018_yf1150/blob/master/HW8_yf1150/HW8_1_yf1150.ip
 The visualization results: 
 ![Alt text](figure1.png)
 ![Alt text](figure2.png)
+![Alt text](figure3.png)
 ![Alt text](figure4.png)
 
 Assignment 2
